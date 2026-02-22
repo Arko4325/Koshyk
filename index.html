@@ -18,32 +18,31 @@
       </div>
     </header>
 
-    <main class="container">
-        <div class="cart-wrapper">
-            <h1 class="cart-title">Ваш кошик</h1>
-            
-            <div id="cart-container">
-                <div class="cart-grid">
-                    <div class="cart-items" id="cart-items-list">
-                        </div>
+<body>
+  
+        
 
-                    <div class="cart-summary">
-                        <h3>Підсумок замовлення</h3>
-                        <div class="summary-row">
-                            <span>Кількість товарів:</span>
-                            <span id="total-count">0</span>
-                        </div>
-                        <div id="total-price-display" style="padding: 0 20px 20px; font-weight: bold; font-size: 20px; text-align: right;">
+<div class="js" style="max-width: 500px; margin: 50px auto;">
+    <header>
+        <div class="header-title">Ваше замовлення</div>
+    </header>
+
+    <div id="cart-items-display" style="padding: 20px;">
+        </div>
+
+    <div id="total-price-display" style="padding: 0 20px 20px; font-weight: bold; font-size: 20px; text-align: right;">
         Разом: 0 ₴
     </div>
+
+    <div class="form" style="padding: 0 20px; display: flex; flex-direction: column; gap: 10px;">
+        <input type="tel" id="user-phone" placeholder="Ваш номер телефону" required style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
+        <input type="email" id="user-email" placeholder="Ваша електронна пошта" style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
+        
         <button class="buy-btn" onclick="processPayment()" style="width: 100%; background: black; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px;">
             Підтвердити та сплатити
-        </button>     
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+        </button>
+    </div>
+</div>
  <footer>
       <div class="container">
         <h3>Консультації і замовлення</h3>
@@ -56,7 +55,10 @@
           <span>Info</span> <span>Tele</span> <span>Mess</span>
         </div>
       </div>
-    </footer>
-    <script src="cart.js"></script>
+
+
+ 
+
+<script src="script.js"></script>
 </body>
 </html>
